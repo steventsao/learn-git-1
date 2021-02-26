@@ -7,6 +7,9 @@ class TestStringMethods(unittest.TestCase):
         # Make sure 3 + 4 = 7
         self.assertEqual(add(3, 4), 7, 'adding three and four')
 
+    def test_add_3arg(self):
+        self.assertEqual(add(3,5,2), 10, 'should take 3 args')
+    
     def test_sub_2arg(self):
         # Make sure 4 - 3 = 1
         self.assertEqual(sub(4, 3), 1, 'subtracting three from four')
